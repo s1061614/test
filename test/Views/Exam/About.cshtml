@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "About";
+}
+
+姓名:林旻豫
+<br />
+學號:410616140
+<br />
+喜歡的水果:
+<br />
+@{
+    string[] fruits = { "蘋果", "香蕉", "荔枝", "鳳梨", "西瓜" };
+}
+
+
+
+
+<ol>
+    @foreach (var item in fruits)
+    {
+        <li>@item</li>
+    }
+</ol>
